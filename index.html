@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juste Prix</title>
+    <!-- Lien vers le fichier CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Conteneur principal pour centrer le jeu et le tableau leaderboard -->
+    <div class="main-container">
+        <div class="container">
+            <h1>Le Juste Prix</h1>
+            <p>Entrez un nombre entre 1 et 1000 :</p>
+            <input type="number" id="userInput">
+            <button id="but" onclick="guessNumber()">Vérifier</button>
+            <p id="result"></p>
+            <p id="lives"></p> <!-- Affichage des vies (coeurs) -->
+            <p id="timer"></p> <!-- Affichage du chronomètre -->
+        </div>
+
+        <!-- Section pour le tableau leaderboard -->
+        <div class="leaderboard">
+            <h2>Leaderboard</h2>
+            <table>
+                <tr>
+                    <th>Manche</th>
+                    <th>Résultat</th>
+                    <th>Temps</th>
+                </tr>
+                <!-- Les rangées du tableau leaderboard seront ajoutées dynamiquement via JavaScript -->
+            </table>
+        </div>
+    </div>
+
+    <!-- Section pour le tableau avec X lignes et Y colonnes -->
+    <div class="table-container">
+        <table class="random-table">
+            <!-- Appel à la fonction JavaScript pour générer le contenu aléatoire -->
+            <script>generateRandomTable(5, 3);</script>
+        </table>
+    </div>
+
+    <!-- Inclusion du fichier index.js -->
+    <script src="index.js"></script>
+</body>
+</html>

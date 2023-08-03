@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="fr">
+<html>
+<head>
+    <title>Ma page avec JavaScript</title>
+</head>
+<body>
+    <!-- Utilisation d'un élément <h1> avec l'id "hello" pour afficher "Hello World 2023" -->
+    <h1 id="hello"></h1>
+
+    <!-- Nouvel élément <div> avec l'id "output" pour afficher le résultat du code JavaScript -->
+    <div id="output"></div>
+
+    <!-- Inclusion du fichier index.js -->
+    <script src="index.js"></script>
+</body>
+</html>
